@@ -1,0 +1,52 @@
+body, html, #root { 
+  height: 100%; 
+  margin: 0; 
+  background-color: #f1f5f9; 
+  font-family: 'Segoe UI', sans-serif; 
+}
+
+.app-wrapper { 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; /* Centrado vertical */
+  align-items: center;     /* Centrado horizontal */
+  min-height: 100vh; 
+  width: 100vw;
+  padding: 20px;
+  box-sizing: border-box; /* Evita que el padding rompa el centrado */
+}
+
+/* Aseguramos que el encabezado no empuje la tarjeta fuera del centro */
+.header-container { 
+  text-align: center; 
+  margin-bottom: 30px; 
+}
+.main-title { color: #1e293b; font-size: 1.8rem; font-weight: 800; margin: 0; }
+.sub-title { color: #065f46; font-weight: 600; margin-top: 5px; font-size: 1rem; }
+
+/* Tarjeta */
+.monitor-card { 
+  width: 500px; 
+  background: white; 
+  border: 6px solid #064e3b; 
+  border-radius: 20px; 
+  padding: 40px; 
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1); 
+}
+
+.card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; }
+.title-group h3 { margin: 0; font-size: 1.5rem; color: #1e293b; }
+.title-group p { margin: 5px 0 0 0; color: #064e3b; font-weight: 700; font-size: 0.9rem; }
+.live-badge { background: #10b981; color: white; padding: 6px 14px; border-radius: 20px; font-weight: 800; font-size: 0.75rem; white-space: nowrap; }
+
+/* Peso */
+.card-body { text-align: center; margin: 40px 0; }
+.label-top { color: #64748b; font-weight: 800; font-size: 0.8rem; letter-spacing: 1px; }
+.weight-display-big { font-size: 7rem; font-weight: 900; color: #1e293b; line-height: 1; margin-top: 10px; }
+.unit { font-size: 2rem; color: #10b981; font-weight: 700; }
+
+/* Footer */
+.card-footer { background: #f8fafc; padding: 20px; border-radius: 12px; display: flex; justify-content: space-between; }
+.footer-col label { display: block; font-size: 0.7rem; color: #64748b; margin-bottom: 5px; }
+.footer-col p { margin: 0; font-weight: 800; color: #064e3b; font-size: 1rem; }
+.status-on { color: #10b981 !important; }
